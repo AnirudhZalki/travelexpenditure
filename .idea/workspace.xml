@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d070131e-1a7d-4edc-b93f-058a12b8d24b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/myproject/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myproject/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myproject/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myproject/myapp/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myapp/templates/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myproject/myapp/templates/vehicle_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myapp/templates/vehicle_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myproject/myapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myapp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myproject/myproject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myproject/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myproject/myproject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myproject/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myproject/myproject/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myproject/wsgi.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

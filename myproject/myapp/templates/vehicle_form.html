@@ -33,22 +33,22 @@
 
                     <div class="mb-3">
                         <label class="form-label fw-semibold">Source</label>
-                        <input type="text" class="form-control" name="source" required readonly>
+                        <input type="text" class="form-control" name="source" id="source" required readonly>
                     </div>
 
                     <div class="mb-3">
                         <label class="form-label fw-semibold">Destination</label>
-                        <input type="text" class="form-control" name="destination" required readonly>
+                        <input type="text" class="form-control" name="destination" id="destination" required readonly>
                     </div>
 
                     <div class="mb-3">
                         <label class="form-label fw-semibold">Distance (in km)</label>
-                        <input type="number" class="form-control" name="distance" step="0.1" required readonly>
+                        <input type="number" class="form-control" name="distance" id="distance" step="0.1" required readonly>
                     </div>
 
                     <div class="mb-3">
                         <label class="form-label fw-semibold">Number of Toll Gates</label>
-                        <input type="number" class="form-control" name="tolls" required readonly>
+                        <input type="number" class="form-control" name="tolls" id="tolls" required readonly>
                     </div>
 
                     <div class="d-grid">
@@ -91,7 +91,7 @@ function fetchTollData(lat1, lon1, lat2, lon2) {
     .then(response => response.json())
     .then(data => {
         if (data.tolls !== undefined) {
-            document.querySelector('input[name="tolls"]').value = data.tolls;
+            document.getElementById('tolls').value = data.tolls;
         }
     });
 }
@@ -101,10 +101,10 @@ function updateMapAndForm() {
         const latlngA = markerA.getLatLng();
         const latlngB = markerB.getLatLng();
 
-        document.querySelector('input[name="source"]').value = `${latlngA.lat.toFixed(5)}, ${latlngA.lng.toFixed(5)}`;
-        document.querySelector('input[name="destination"]').value = `${latlngB.lat.toFixed(5)}, ${latlngB.lng.toFixed(5)}`;
+        document.getElementById('source').value = `${latlngA.lat.toFixed(5)}, ${latlngA.lng.toFixed(5)}`;
+        document.getElementById('destination').value = `${latlngB.lat.toFixed(5)}, ${latlngB.lng.toFixed(5)}`;
 
-        const R = 6371;
+        const R = 6371; // Earth's radius in km
         const dLat = (latlngB.lat - latlngA.lat) * Math.PI / 180;
         const dLon = (latlngB.lng - latlngA.lng) * Math.PI / 180;
         const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
@@ -113,7 +113,7 @@ function updateMapAndForm() {
         const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
         const distance = R * c;
 
-        document.querySelector('input[name="distance"]').value = distance.toFixed(2);
+        document.getElementById('distance').value = distance.toFixed(2);
 
         fetchTollData(latlngA.lat, latlngA.lng, latlngB.lat, latlngB.lng);
     }
@@ -130,6 +130,5 @@ map.on('click', function(e) {
     }
 });
 </script>
-
 </body>
 </html>
