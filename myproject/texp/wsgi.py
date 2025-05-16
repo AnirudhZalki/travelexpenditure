@@ -1,5 +1,5 @@
 """
-WSGI config for myproject project.
+WSGI config for texp project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -14,6 +14,6 @@ from django.core.wsgi import get_wsgi_application
 from dotenv import load_dotenv
 load_dotenv()
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "myproject.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "texp.settings")
 
 application = get_wsgi_application()
