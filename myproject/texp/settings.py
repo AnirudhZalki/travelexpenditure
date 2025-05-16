@@ -27,7 +27,7 @@ SECRET_KEY = "django-insecure-hz-%@j^$_(2w2_fp8@)prmcs%d5yt^qw(k%3!sci)0adiqt9rw
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['texpenditurecalc.onrender.com']
 
 
 # Application definition
