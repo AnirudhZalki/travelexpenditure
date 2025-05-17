@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d070131e-1a7d-4edc-b93f-058a12b8d24b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/myproject/texp/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/texp/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myproject/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/Procfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
