@@ -1,2 +1,1 @@
-web: gunicorn myproject.texp.wsgi
-
+web: gunicorn texp.wsgi

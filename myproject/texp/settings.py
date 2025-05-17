@@ -27,7 +27,7 @@ SECRET_KEY = "django-insecure-hz-%@j^$_(2w2_fp8@)prmcs%d5yt^qw(k%3!sci)0adiqt9rw
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['texpenditurecalc.onrender.com']
+ALLOWED_HOSTS = ['texpenditurecalc.onrender.com','127.0.0.1']
 
 
 # Application definition
@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "myproject.myapp",
+    "myapp",
 ]
 
 MIDDLEWARE = [
